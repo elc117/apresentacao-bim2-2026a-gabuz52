@@ -8,12 +8,12 @@ Execução sem modificar nada:
 
 ![](gif1.gif)
 
-Isso pode ser resolvido adicionando a palavra-chave "synchronized" no método de incremento:
+Isso pode ser resolvido adicionando o recurso de pacote **java.util.concurrent.atomic.AtomicInteger**.
 
-![](printsync.png)
+![](printatomic.png)
 
-O synchronized não deixa uma thread tentar incrementar o contador até que a outra tenha terminado, assim eliminando os resultados diferentes de 2000.
+O que esse pacote faz é usar operações atômicas para realizar os cálculos, operações atômicas não podem ser interrompidas, resultando em nenhum incremento sendo bloqueado.
 
-Execução com o synchronized adicionado:
+Execução com o pacote adicionado:
 
 ![](gif2.gif)
