@@ -23,3 +23,5 @@ Execução com o pacote adicionado:
 Foi pedido para encontrar um código open source que utilizasse algum método de sincronização. Utilizei um [repositório](https://github.com/alxkm/java-concurrency-patterns) que mostra vários métodos de sincronização de códigos concorrentes, decidi usar um [código](https://github.com/alxkm/java-concurrency-patterns/blob/master/src/main/java/org/alxkm/patterns/locks/ReentrantReadWriteLockCounter.java) que utiliza locks:
 
 ![](printlock.png)
+
+O lock funciona bloqueando uma variável quando uma thread vai fazer alguma modificação, e libertando ela após concluir, enquanto a variável está no lock as outras threads ficam em espera até ela ser libertada.
