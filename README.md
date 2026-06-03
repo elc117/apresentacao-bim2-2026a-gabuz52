@@ -17,3 +17,9 @@ O que esse pacote faz é usar operações atômicas para realizar os cálculos, 
 Execução com o pacote adicionado:
 
 ![](gif2.gif)
+
+# Parte 2
+## Lock
+Foi pedido para encontrar um código open source que utilizasse algum método de sincronização. Utilizei um [repositório](https://github.com/alxkm/java-concurrency-patterns) que mostra vários métodos de sincronização de códigos concorrentes, decidi usar um [código](https://github.com/alxkm/java-concurrency-patterns/blob/master/src/main/java/org/alxkm/patterns/locks/ReentrantReadWriteLockCounter.java) que utiliza locks:
+
+![](printlock.png)
