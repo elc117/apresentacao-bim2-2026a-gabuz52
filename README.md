@@ -8,3 +8,12 @@ Execução sem modificar nada:
 
 ![](gif1.gif)
 
+Isso pode ser resolvido adicionando a palavra-chave "synchronized" no método de incremento:
+
+![](printsync.png)
+
+O synchronized não deixa uma thread tentar incrementar o contador até que a outra tenha terminado, assim eliminando os resultados diferentes de 2000.
+
+Execução com o synchronized adicionado:
+
+![](gif2.gif)
